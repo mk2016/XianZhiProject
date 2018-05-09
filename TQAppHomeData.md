@@ -12,6 +12,7 @@ NSArray *carItemList;	//猜你喜欢  车辆信息DTO 数组
 
 ```
 NSNumber *style;        /*!< 样式 */
+NSNumber *rank;        	 /*!< 排序 */
 NSString *info;         /*!< 样式说明，可选 */
 NSString *moduleImgUrl; /*!< 模块用到的图片URL,平台介绍模块用到 */ 
 NSArray *contentList;   /*!< 数组样式用 TQHomeActionInfo array */
@@ -61,7 +62,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 			"style" : "样式ID",        /*!< 样式 */
 			"info": "样式说明", 
 			"moduleImgUrl": "模块用到的图片URL", /*!< 平台介绍模块用到 */ 
- 
+ 			"rank": 0,  	 				/*!< 排序 */
 			//内部为列表数据时使用 contentList
 			//内部为单一元素时使用 contentInfo
 			//多行横向滚动列表使用 contentScrollList   
@@ -139,19 +140,19 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		"contentList" : [{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			}]	
 		}
 ```
@@ -170,17 +171,17 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		"contentList" : [{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
 				"iconUrl" : "图片URL",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			},{
 				"title" : 	"文字",
-				"actionUrl" :  "点击事件RUI"
+				"actionUrl" :  "点击事件"
 			}]	
 		}
 ```
@@ -221,11 +222,11 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 			"startTime" : "开始时间戳",	
 			"endTime" : "结束时间戳",
 			"beforeImgUrl" : "活动前图片",
-			"beforeActionUrl" : "活动前点击事件RUI",
+			"beforeActionUrl" : "活动前点击事件",
 			"ingImgUrl" : "活动中图片URL",
-			"ingActionUrl" : "活动中点击事件RUI",
+			"ingActionUrl" : "活动中点击事件",
 			"afterImgUrl" : "活动后图片URL",
-			"afterActionUrl" : "活动后点击事件RUI"
+			"afterActionUrl" : "活动后点击事件"
 		}
 	
 	}	
@@ -245,10 +246,10 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 			"moduleImgUrl" : "平台介绍前面图片， 固定尺寸", 
 			"contentList" : [{
 				"title" : "文字",
-				"actionUrl" : "点击事件RUI"
+				"actionUrl" : "点击事件"
 			},{
 				"title" : "文字",
-				"actionUrl" : "点击事件RUI"
+				"actionUrl" : "点击事件"
 			}]
 		}
 ```
@@ -267,11 +268,11 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 	"contentList" : [{
 		"title" : "文字",
 		"iconUrl" : "右边的图片",
-		"actionUrl" : "点击事件RUI"
+		"actionUrl" : "点击事件"
 	},{
 		"title" : "文字",
 		"iconUrl" : "右边的图片",
-		"actionUrl" : "点击事件RUI"
+		"actionUrl" : "点击事件"
 	}]
 }
 ```
@@ -289,7 +290,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		"style" : 8,
 		"info" : "无边距单图模块",
 		"contentInfo" : {
-			"actionUrl" : "点击事件RUI",
+			"actionUrl" : "点击事件",
 			"picUrl" : "图片URL",
 			"width" : "759",
 			"height" : "198"
@@ -308,7 +309,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		"style" : 9,
 		"info" : "有边距固定大小单图模块",
 		"contentInfo" : {
-			"actionUrl" : "点击事件RUI",
+			"actionUrl" : "点击事件",
 			"picUrl" : "图片URL",
 		}	
 	}
@@ -435,23 +436,23 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 				"startTime" : "开始时间戳",	
 				"endTime" : "结束时间戳",
 				"beforeImgUrl" : "活动前图片",
-				"beforeActionUrl" : "活动前点击事件RUI",
+				"beforeActionUrl" : "活动前点击事件",
 				"ingImgUrl" : "活动中图片URL",
-				"ingActionUrl" : "活动中点击事件RUI",
+				"ingActionUrl" : "活动中点击事件",
 				"afterImgUrl" : "活动后图片URL",
-				"afterActionUrl" : "活动后点击事件RUI"
+				"afterActionUrl" : "活动后点击事件"
 			}				
 		},{
 			"picUrl" : "图片URL",
 			"tagUrl" : "标签图片",			
-			"actionUrl" : "点击事件RUI"
+			"actionUrl" : "点击事件"
 		},{
 			"picUrl" : "图片URL",
-			"actionUrl" : "点击事件RUI"
+			"actionUrl" : "点击事件"
 		},{
 			"picUrl" : "图片URL",
 			"tagUrl" : "标签图片",		
-			"actionUrl" : "点击事件RUI"
+			"actionUrl" : "点击事件"
 		}
 	]
 }
