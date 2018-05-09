@@ -63,8 +63,9 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 			"moduleImgUrl": "模块用到的图片URL", /*!< 平台介绍模块用到 */ 
  
 			//内部为列表数据时使用 contentList
-			//内部为单一元素时使用 contentInfo   
-			//contentList 与 contentInfo 不会同时使用
+			//内部为单一元素时使用 contentInfo
+			//多行横向滚动列表使用 contentScrollList   
+			//contentList、contentInfo、contentScrollList 不会同时使用
 			"contentList" : [], //TQHomeActionInfo DTO 数组
 			"contentScrollList" : [	 //二维数组  多行横向滚动列表
 				[],	//TQHomeActionInfo DTO 数组
