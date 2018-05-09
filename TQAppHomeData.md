@@ -403,30 +403,33 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 ```
 
 ---
-
 #### 31.豆腐块样式1  (3格子) `style 31`
+
+![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/30.png)
+
+#### 32.豆腐块样式2  (3格子) `style 32`
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/31.png)
 
-#### 32.豆腐块样式2  (4格子) `style 32`
+#### 33.豆腐块样式3  (4格子) `style 33`
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/32.png)
 
-#### 33.豆腐块样式3  (4格子) `style 33`
+#### 34.豆腐块样式4  (4格子) `style 34`
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/33.png)
 
-#### 34.豆腐块样式4  (4格子) `style 34`
+#### 35.豆腐块样式5  (4格子) `style 35`
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/34.png)
 
-#### 35.豆腐块样式5  (5格子) `style 35`
+#### 36.豆腐块样式6  (5格子) `style 36`
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/35.png)
 
 ```
 {
-	"style" : 31,		//31-35
+	"style" : 31,		//31-36
 	"info" : "车辆导购豆腐块",
 	"contentList" : [		//列表数据 数量 对应样式 格子数量
 		{
