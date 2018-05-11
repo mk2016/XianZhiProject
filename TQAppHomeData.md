@@ -385,6 +385,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/20.png)
 
+```
 {	
 	"style" : 13,
 	"info" : "车辆列表样式",
@@ -392,6 +393,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		"carItemList" : []
     ]
 }
+```
 
 ---
 #### 31.豆腐块样式1  (3格子) `style 31`
