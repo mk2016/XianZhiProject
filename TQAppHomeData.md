@@ -361,21 +361,8 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 12,
 	"info" : "两列多行样式",
-	"contentList" : [
-		{
-          "picUrl" : "图片URL",
-          "tagUrl" : "标签url",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        }
+    "contentInfo" : [
+		"carItemList" : []
     ]
 }
 ```
@@ -389,7 +376,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 13,
 	"info" : "车辆列表样式",
-	"contentList" : [
+	"contentInfo" : [
 		"carItemList" : []
     ]
 }
