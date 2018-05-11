@@ -4,7 +4,6 @@
 
 ```
 NSArray *homeDataList;  /*!< 首页列表配置数据 TQHomeStyleInfo array */
-NSArray *carItemList;	//猜你喜欢  车辆信息DTO 数组
 ```
 
 
@@ -33,7 +32,8 @@ NSString *color;            /*!< 颜色 （首页线索登记模块）用到 */
 NSNumber *width;            /*!< 图片宽 */
 NSNumber *height;           /*!< 图片高 */
 BOOL marketing;           	 /*!< 是否有营销活动 倒计时 */
-TQMarketInfo *marketInfo;   /*!< 市场营销数据  marketing 为 true 时 使用 */
+TQMarketInfo *marketInfo;   /*!< 市场营销数据 marketing 为 true 时 使用 */
+NSArray *carItemList;		 /*!< 车辆信息列表 */
 ```
 
 * TQMarketInfo
@@ -94,7 +94,8 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 						"ingActionUrl": "",     /*!< 活动中点击事件URL */
 						"afterImgUrl": "",      /*!< 活动后图片 */
 						"afterActionUrl": "",   /*!< 活动后点击事件URL */
-					}  		
+					},
+					"carItemList" : [],         /*!< 车辆信息列表，猜你喜欢 */  		
 				}
 		},{
 			//TQHomeStyleInfo 模型的 DTO
