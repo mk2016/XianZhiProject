@@ -376,9 +376,9 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 13,
 	"info" : "车辆列表样式",
-	"contentInfo" : [
+	"contentInfo" : {
 		"carItemList" : []
-    ]
+    }
 }
 ```
 
