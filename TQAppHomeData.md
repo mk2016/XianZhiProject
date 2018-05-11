@@ -15,7 +15,6 @@ NSNumber *rank;        	 /*!< 排序 */
 NSString *info;         /*!< 样式说明，可选 */
 NSString *moduleImgUrl; /*!< 模块用到的图片URL,平台介绍模块用到 */ 
 NSArray *contentList;   /*!< 数组样式用 TQHomeActionInfo array */
-NSArray *contentScrollList;   	/*!< 横向滚动列表 二维数组 */
 TQHomeActionInfo *contentInfo;   /*!< 单数据样式用 TQHomeActionInfo */
 ```
 
@@ -65,13 +64,8 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
  			"rank": 0,  	 				/*!< 排序 */
 			//内部为列表数据时使用 contentList
 			//内部为单一元素时使用 contentInfo
-			//多行横向滚动列表使用 contentScrollList   
-			//contentList、contentInfo、contentScrollList 不会同时使用
+			//contentList、contentInfo 不会同时使用
 			"contentList" : [], //TQHomeActionInfo DTO 数组
-			"contentScrollList" : [	 //二维数组  多行横向滚动列表
-				[],	//TQHomeActionInfo DTO 数组
-				[]	//TQHomeActionInfo DTO 数组
-			],
 			"contentInfo" : 	//TQHomeActionInfo DTO
 				{
 					"title" : "",            /*!< 标题 */
@@ -348,29 +342,12 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 11,
 	"info" : "多行横向滚动样式",
-	"contentScrollList" : [
-		[{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        }
-		],[
+	"contentList" : [
 		{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        },{
-          "picUrl" : "图片URL",
-          "actionUrl" : "点击事件"
-        }
-		]
+		  carItemList : []  // 车辆信息列表
+		},{ 
+		  carItemList : []  // 车辆信息列表
+		}
     ]
 }
 ```
@@ -402,6 +379,19 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
     ]
 }
 ```
+
+---
+#### 13.车辆列表样式 (猜你喜欢) `style 13`
+
+![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/20.png)
+
+{	
+	"style" : 13,
+	"info" : "车辆列表样式",
+	"contentList" : [
+		"carItemList" : []
+    ]
+}
 
 ---
 #### 31.豆腐块样式1  (3格子) `style 31`
