@@ -331,7 +331,9 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 
 ---
 #### 11.多行横向滚动样式 (375x190) `style 11`
-![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/7.png)
+
+![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/18.png)
+
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/8.png)
 
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/19.png)
@@ -356,7 +358,9 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 
 ---
 #### 12.两列多行样式 (375x190) `style 12`
-![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/7.png)
+
+![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/18.png)
+
 ![image](https://github.com/mk2016/XianZhiProject/blob/master/Resource/image/9.png)
 
 ```
