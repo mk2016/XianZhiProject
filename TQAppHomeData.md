@@ -1,11 +1,5 @@
 ## DTO 数据模型
 
-* TQHomeDataInfo
-
-```
-NSArray *homeDataList;  /*!< 首页列表配置数据 TQHomeStyleInfo array */
-```
-
 
 * TQHomeStyleInfo 
 
@@ -13,6 +7,7 @@ NSArray *homeDataList;  /*!< 首页列表配置数据 TQHomeStyleInfo array */
 NSNumber *style;        /*!< 样式 */
 NSNumber *rank;        	 /*!< 排序 */
 NSString *info;         /*!< 样式说明，可选 */
+NSString *title;        /*!< 标题文案，可选 */
 NSString *moduleImgUrl; /*!< 模块用到的图片URL,平台介绍模块用到 */ 
 NSArray *contentList;   /*!< 数组样式用 TQHomeActionInfo array */
 TQHomeActionInfo *contentInfo;   /*!< 单数据样式用 TQHomeActionInfo */
@@ -54,7 +49,6 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 
 ```
 {
-	"carItemList" : [],		//猜你喜欢 车辆信息DTO数组
 	"homeDataList" : [
 		//TQHomeStyleInfo 模型的 DTO 数组
 		{
@@ -62,6 +56,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 			"info": "样式说明", 
 			"moduleImgUrl": "模块用到的图片URL", /*!< 平台介绍模块用到 */ 
  			"rank": 0,  	 				/*!< 排序 */
+ 			"title" : "标题",				/*!< 有值时 展示模块标题样式 */
 			//内部为列表数据时使用 contentList
 			//内部为单一元素时使用 contentInfo
 			//contentList、contentInfo 不会同时使用
@@ -100,8 +95,6 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 ```
 
 ## 示例
-
-`PS: 猜你喜欢为服务端查表数据，与后台配置数据区分，单独字段，不以 style 区分`
 
 #### 1.banner (375x190)  `style 1`
 
@@ -348,7 +341,10 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 		},{ 
 		  carItemList : []  // 车辆信息列表
 		}
-    ]
+    ],
+    "contentInfo" : {
+    		// 头部图片信息，点击事件
+    }
 }
 ```
 
@@ -361,9 +357,10 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 12,
 	"info" : "两列多行样式",
-    "contentInfo" : {
-		"carItemList" : []
-    }
+   "contentInfo" : {
+		"carItemList" : []	//车辆列表
+		// 头部图片信息，点击事件
+   }
 }
 ```
 
@@ -376,6 +373,7 @@ NSString *afterActionUrl;   /*!< 活动后点击事件URL */
 {	
 	"style" : 13,
 	"info" : "车辆列表样式",
+	"title" : "猜你喜欢",
 	"contentInfo" : {
 		"carItemList" : []
     }
